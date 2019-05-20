@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    form(action="/notes" method='POST').mt-5
+        div.form-group
+            label(for="nameNote").h1 Название заметки
+            input.form-control#nameNote(type='text' name='title')
+        div.form-group
+            label(for="descriptionNote").h1 Описание
+            textarea.form-control#descriptionNote(name='description')
+        div.form-group.d-flex.align-items-center.justify-content-between
+            button.btn.btn-success(type="submit") Создать
+            button.btn.btn-secondary.mb-4(type="button" onclick="closeData()" name="close") Отмена

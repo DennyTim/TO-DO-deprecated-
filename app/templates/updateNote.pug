@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    form#myform( method='post').mt-5
+        div.form-group
+            label(for="nameNote").h1.font-weight-bold.mb-3 Название заметки
+            input.form-control#noteId(type='hidden' value=notes.id)
+            input.form-control#nameNote(type='text' name='title' value=notes.title)
+        div.form-group
+            label(for="descriptionNote").h1.mb-3.mt-3.font-weight-bold Описание
+            textarea.form-control#descriptionNote(type='text' name='description') #{notes.description}
+        div.form-group.d-flex.flex-column.align-items-center
+            input(type='hidden' name='_method' value='put')
+            button.btn.btn-success.mb-4.mt-4(type="button" onclick='postData()' name="save") Сохранить изменения
+            button.btn.btn-secondary.mb-4#cl(type="button" onclick="closeData()" name="close") Отмена
+            button.btn.btn-danger(type="button" name='delete' onclick='deleteData()') Удалить

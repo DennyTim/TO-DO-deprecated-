@@ -1,0 +1,192 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.container{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.btn-block {
+	padding-top: 25px;
+	display: flex;
+	justify-content: center;
+}
+
+.btn-addlist {
+	padding: 25px;
+	background-color: rgba(96, 96, 239, 0.69);
+	outline: none !important;					/* Что-то перебивает обычный*/
+	border: none;
+	border-radius: 10px;
+	font-weight: 700;
+}
+
+.btn-addlist:active {
+	background-color: rgba(76, 76, 185, 0.76);
+}
+
+.btn-block-tiles {
+	position: absolute;
+	right: 20px;
+	top: 5px;
+}
+
+.btn-update {
+	margin-right: 4px;
+	font-size: 15px;
+	color: black;
+	text-decoration: none;
+}
+
+.btn-more {
+	margin-right: 4px;
+	font-size: 15px;
+	color: black;
+	text-decoration: none;
+}
+
+.btn-delete {
+	font-size: 25px;
+	color: black;
+	text-decoration: none;
+}
+
+.btn-update:hover {
+	color: rgba(76, 76, 185, 0.76);
+	text-decoration: none;
+	transition: All 0.5s;
+}
+
+.btn-delete:hover {
+	color: rgba(76, 76, 185, 0.76);
+	text-decoration: none;
+	transition: All 0.5s;
+}
+
+.btn-icon {
+	color: white;
+}
+
+.btn-addlist-text {
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+	color: white;
+}
+
+.tiles {}
+
+.tiles-items {
+	display: inline-block;
+	vertical-align: text-top;
+	position: relative;
+	background-color: rgba(96, 96, 239, 0.69);
+	border: 1px solid black;
+	border-radius: 20px;
+	padding: 20px;
+	margin-bottom: 50px;
+	margin-right: 30px;
+}
+
+.tiles-item-text {
+	border: 1px solid black;
+	border-radius: 4px;
+	background-color: rgba(96, 96, 239, 0.32);
+	position: relative;
+}
+
+.tiles-item-del {
+	border: 1px solid black;
+	position: absolute;
+	padding: 12px 15px;
+	right: 8%;
+	z-index: 2;
+	transition: opacity 0.6s ease-out;
+    opacity: 0;
+}
+
+.list-item:hover .tiles-item-del {
+	opacity: 1;
+}
+
+/*Modal window addlist*/
+
+.modal-addlist {
+	position: fixed; /* Stay in place */
+	z-index: 5; /* Sit on top */
+	left: 0;
+	top: -100%;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+	background-color: #fefefe;
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 50%;
+}
+
+.modal-close {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*Modal window updlist*/
+
+.modal-updlist {
+	position: fixed; /* Stay in place */
+	z-index: 5; /* Sit on top */
+	left: 0;
+	top: -100%;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+/* List More*/
+.well {
+	max-height: 300px;
+	margin-bottom: 0px;
+	overflow: auto;
+}
+
+.item-lists {
+	padding-left: 35px;
+}
+
+.item-lists-fonts {
+	font-size: 16px;
+}
+
+input[type=checkbox]:checked + label{
+	text-decoration: line-through;
+	font-weight: 500;
+}
+
+.close-item {
+	border: none;
+	outline: none;
+	background-color: #b8daff;
+	font-size: 20px;
+	color: #3c3c3c;
+	text-decoration: none !important;
+}

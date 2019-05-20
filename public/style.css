@@ -1,0 +1,49 @@
+.bg-blue {
+	background-color: #00BFFF;
+}
+
+.bg-plum {
+	background-color: #DDA0DD;
+}
+
+.bg-slate-blue {
+	background-color: #6A5ACD;
+}
+
+.bg-peru {
+	background-color: #CD853F;
+}
+
+.bg-lime {
+	background-color: #00FF00;
+}
+
+.bg-sky-blue {
+	background-color:#87CEEB;
+}
+
+.list-group-item {
+	line-height: 30px;
+}
+
+.list-group-item .h1{
+	word-wrap: break-word;
+}
+
+.list-group-item:focus, .list-group-item:hover{
+	opacity: 0.7;
+}
+
+.btn-lg.btn-primary {
+	padding: 16px;
+	height: 64px;
+	animation: plusSizing infinite 1s;
+}
+
+@keyframes plusSizing {
+	0%   {font-size: 20px;}
+	25%  {font-size: 21px;}
+	50%  {font-size: 22px;}
+	75%  {font-size: 23px;}
+	100% {font-size: 24px;}
+}
